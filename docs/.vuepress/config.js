@@ -1,12 +1,13 @@
 
 import { defineUserConfig } from 'vuepress'
 import { viteBundler } from '@vuepress/bundler-vite'
-import { defaultTheme } from '@vuepress/theme-default'
+import { plumeTheme } from 'vuepress-theme-plume'
 
 export default defineUserConfig({
+  lang: 'zh-CN',
   base: '/',
   bundler: viteBundler(),
-  theme: defaultTheme({
+  theme: plumeTheme({
     navbar: [{ text: 'Home', link: '/' }, { text: 'Archives', link: '/archives/' }],
   }),
   title: 'Physicscw Docs'
