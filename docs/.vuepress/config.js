@@ -8,7 +8,12 @@ export default defineUserConfig({
   base: '/',
   bundler: viteBundler(),
   theme: plumeTheme({
-    navbar: [{ text: 'Home', link: '/' }, { text: 'Archives', link: '/archives/' }],
+    navbar: [
+      { text: 'Home', link: '/' },
+      { text: 'Archives', link: '/archives/' },
+      { text: 'Notes', link: '/notes/' },
+      { text: 'Preview', link: '/preview/' }
+    ]
   }),
-  title: 'Physicscw Docs'
+  title: 'Physicscw'
 })

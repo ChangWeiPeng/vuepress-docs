@@ -4,6 +4,6 @@ config:
   -
     type: profile
     name: Physicscw
-    description: 祝爸爸父亲节快乐！
+    description: Majoring in physics at WHU
     avatar: 
 ---
