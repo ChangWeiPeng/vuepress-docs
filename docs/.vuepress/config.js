@@ -12,7 +12,8 @@ export default defineUserConfig({
       { text: 'Home', link: '/' },
       { text: 'Archives', link: '/archives/' },
       { text: 'Notes', link: '/notes/' },
-      { text: 'Preview', link: '/preview/' }
+      { text: 'Preview', link: '/preview/' },
+      { text: 'Download', link: '/download/' }
     ]
   }),
   title: 'Physicscw'
