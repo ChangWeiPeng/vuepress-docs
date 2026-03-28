@@ -1,6 +1,6 @@
 [build]
   base = "."
-  command = "npm run docs:build"
+  command = "npx vuepress build docs"
   publish = "docs/.vuepress/dist"
 [build.environment]
   NODE_VERSION = "22.13.0"
