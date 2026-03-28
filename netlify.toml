@@ -1,6 +1,7 @@
 [build]
   base = "."
-  command = "npm run docs:build"
+  command = "npm install && npm run docs:build"
   publish = "docs/.vuepress/dist"
 [build.environment]
   NODE_VERSION = "22.13.0"
+  NPM_FLAGS = "--include=dev"
