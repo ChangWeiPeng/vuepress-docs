@@ -1,5 +1,5 @@
 import comp from "C:/Users/29657/vuepress-starter/docs/.vuepress/.temp/pages/article/xob5qevk/index.html.vue"
-const data = JSON.parse("{\"path\":\"/article/xob5qevk/\",\"title\":\"Markdown Guide\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Markdown Guide\",\"createTime\":\"2025/09/30 14:03:28\",\"permalink\":\"/article/xob5qevk/\"},\"readingTime\":{\"minutes\":0.04,\"words\":13},\"git\":{},\"filePathRelative\":\"preview/markdown.md\",\"headers\":[],\"categoryList\":[{\"id\":\"5ebeb6\",\"sort\":10001,\"name\":\"preview\"}]}")
+const data = JSON.parse("{\"path\":\"/article/xob5qevk/\",\"title\":\"Markdown Guide\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Markdown Guide\",\"createTime\":\"2025/09/30 14:03:28\",\"permalink\":\"/article/xob5qevk/\"},\"readingTime\":{\"minutes\":0.04,\"words\":13},\"git\":{},\"filePathRelative\":\"blog/preview/markdown.md\",\"headers\":[],\"categoryList\":[{\"id\":\"126ac9\",\"sort\":10002,\"name\":\"blog\"},{\"id\":\"78e829\",\"sort\":10003,\"name\":\"preview\"}]}")
 export { comp, data }
 
 if (import.meta.webpackHot) {

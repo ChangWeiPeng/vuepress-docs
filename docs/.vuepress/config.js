@@ -1,4 +1,3 @@
-
 import { defineUserConfig } from 'vuepress'
 import { viteBundler } from '@vuepress/bundler-vite'
 import { plumeTheme } from 'vuepress-theme-plume'
@@ -10,12 +9,13 @@ export default defineUserConfig({
   theme: plumeTheme({
     navbar: [
       { text: 'Home', link: '/' },
-      { text: 'Archives', link: '/archives/' },
-      { text: 'Notes', link: '/notes/' },
-      { text: 'Preview', link: '/preview/' },
-      { text: 'Download', link: '/download/' },
-      { text: 'Algorithm', link: '/algorithm/' }
-    ]
+      { text: 'blog', link: '/blog/' },
+    ],
+    plugins: {
+      markdownPower: {
+        bilibili: true,
+      },
+    },
   }),
   title: 'Physicscw'
 })
