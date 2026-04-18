@@ -16,6 +16,9 @@ export default defineUserConfig({
         bilibili: true,
       },
     },
+    collections: [
+      {type: 'post', dir: 'blog', title: '博客'}
+    ]
   }),
   title: 'Physicscw'
 })
