@@ -10,6 +10,7 @@ export default defineUserConfig({
     navbar: [
       { text: 'Home', link: '/' },
       { text: 'blog', link: '/blog/' },
+      { text: 'docs', link: '/docs/' },
     ],
     plugins: {
       markdownPower: {
@@ -17,8 +18,11 @@ export default defineUserConfig({
       },
     },
     collections: [
-      {type: 'post', dir: 'blog', title: '博客'}
-    ]
+      {type: 'post', dir: 'blog', title: 'blog'}
+    ],
+    collections: [
+      {type: 'doc', dir: 'docs', title: 'docs'}
+    ],
   }),
   title: 'Physicscw'
 })
