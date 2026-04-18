@@ -18,10 +18,8 @@ export default defineUserConfig({
       },
     },
     collections: [
-      {type: 'post', dir: 'blog', title: 'blog'}
-    ],
-    collections: [
-      {type: 'doc', dir: 'docs', title: 'docs'}
+      { type: 'post', dir: 'blog', title: 'blog' },
+      { type: 'doc', dir: 'docs', title: 'docs', },
     ],
   }),
   title: 'Physicscw'
