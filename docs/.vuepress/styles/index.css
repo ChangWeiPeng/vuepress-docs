@@ -1,0 +1,247 @@
+/* ============================================
+   Index: 陶哲轩风格 - 书页感核心样式
+   ============================================ */
+
+/* ------ 1. 正文区域：窄列 + 大行距 ------ */
+.vp-doc {
+  max-width: 740px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 17px;
+  line-height: 1.9;
+  color: var(--vp-c-text-1);
+  /* 页面切换淡入动效 */
+  animation: pageFadeIn 0.28s ease-out;
+}
+
+@keyframes pageFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ------ 2. 标题：衬线 + 轻量感 ------ */
+.vp-doc h1,
+.vp-doc h2,
+.vp-doc h3,
+.vp-doc h4 {
+  font-family: 'Lora', 'Georgia', serif;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--vp-c-text-1);
+}
+
+.vp-doc h1 {
+  font-size: 2em;
+  margin-bottom: 0.6em;
+  border-bottom: 2px solid var(--vp-c-divider);
+  padding-bottom: 0.4em;
+}
+
+.vp-doc h2 {
+  font-size: 1.45em;
+  margin-top: 2.2em;
+  border-bottom: 1px solid var(--vp-c-divider);
+  padding-bottom: 0.3em;
+}
+
+.vp-doc h3 {
+  font-size: 1.2em;
+  margin-top: 1.8em;
+}
+
+/* ------ 3. 段落与正文间距 ------ */
+.vp-doc p {
+  margin: 1.1em 0;
+  text-align: justify;
+  hyphens: auto;
+}
+
+/* ------ 4. 数学公式：放大字号 ------ */
+.vp-doc .katex-display {
+  margin: 1.8em 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+/* 行内公式：比正文大约 50% */
+.vp-doc .katex {
+  font-size: 1.5em;
+}
+
+/* 块级公式：正文的 2 倍大 */
+.vp-doc .katex-display > .katex {
+  font-size: 2em;
+}
+
+/* 行内公式不跳行 */
+.vp-doc .katex-inline {
+  white-space: nowrap;
+}
+
+/* ------ 5. Callout 块：学术定理框风格 ------ */
+
+/* 通用：去掉圆角，改为左边实线 */
+.vp-doc .hint-container {
+  border-radius: 0 4px 4px 0;
+  border-left-width: 3px;
+  border-left-style: solid;
+  padding: 0.8em 1.2em;
+  margin: 1.4em 0;
+}
+
+/* NOTE / 定理框：深灰左线 + 斜体 */
+.vp-doc .hint-container.note,
+.vp-doc .hint-container.info {
+  border-left-color: #555;
+  background: #f9f8f5;
+  font-style: italic;
+}
+
+.vp-doc .hint-container.note .hint-container-title,
+.vp-doc .hint-container.info .hint-container-title {
+  font-style: normal;
+  font-weight: 700;
+  font-family: 'Lora', 'Georgia', serif;
+  color: #333;
+}
+
+/* TIP / 提示框：蓝灰左线 */
+.vp-doc .hint-container.tip {
+  border-left-color: #3a5a8c;
+  background: #f4f6fb;
+  font-style: normal;
+}
+
+.vp-doc .hint-container.tip .hint-container-title {
+  color: #3a5a8c;
+  font-weight: 700;
+}
+
+/* WARNING / 警告框：琥珀色左线 */
+.vp-doc .hint-container.warning {
+  border-left-color: #b07800;
+  background: #fffbf0;
+  font-style: normal;
+}
+
+.vp-doc .hint-container.warning .hint-container-title {
+  color: #8a5e00;
+  font-weight: 700;
+}
+
+/* DANGER / 危险框 */
+.vp-doc .hint-container.danger {
+  border-left-color: #c0392b;
+  background: #fff5f5;
+}
+
+/* QUESTION / 问题框：绿色左线 */
+.vp-doc .hint-container.question,
+.vp-doc .hint-container.caution {
+  border-left-color: #2e7d52;
+  background: #f0faf4;
+  font-style: italic;
+}
+
+.vp-doc .hint-container.question .hint-container-title {
+  font-style: normal;
+  font-weight: 700;
+  color: #2e7d52;
+}
+
+/* ------ 6. 引用块：书页风格 ------ */
+.vp-doc blockquote {
+  border-left: 3px solid var(--vp-c-border);
+  background: var(--vp-c-bg-soft);
+  margin: 1.4em 0;
+  padding: 0.6em 1.2em;
+  font-style: italic;
+  color: var(--vp-c-text-2);
+  border-radius: 0;
+}
+
+/* ------ 7. 代码块：简洁 ------ */
+.vp-doc code {
+  font-size: 0.88em;
+  background: var(--vp-c-bg-mute);
+  border-radius: 3px;
+  padding: 0.15em 0.4em;
+}
+
+/* ------ 8. 链接：低调蓝，无下划线，hover 时显示 ------ */
+.vp-doc a {
+  color: var(--vp-c-brand-1);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.vp-doc a:hover {
+  border-bottom-color: var(--vp-c-brand-1);
+}
+
+/* ------ 9. 表格：学术风格 ------ */
+.vp-doc table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.4em 0;
+  font-size: 0.95em;
+}
+
+.vp-doc th {
+  border-bottom: 2px solid var(--vp-c-divider);
+  padding: 0.5em 0.8em;
+  text-align: left;
+  font-weight: 600;
+  background: transparent;
+}
+
+.vp-doc td {
+  border-bottom: 1px solid var(--vp-c-divider);
+  padding: 0.45em 0.8em;
+}
+
+.vp-doc tr:last-child td {
+  border-bottom: none;
+}
+
+/* ------ 10. 导航栏：轻量化 ------ */
+.vp-navbar {
+  backdrop-filter: blur(8px);
+  background: rgba(253, 252, 248, 0.92);
+  border-bottom: 1px solid var(--vp-c-divider);
+  box-shadow: none;
+}
+
+.dark .vp-navbar {
+  background: rgba(26, 25, 23, 0.92);
+}
+
+/* ------ 11. 侧边栏：低调 ------ */
+.vp-sidebar {
+  font-size: 0.92em;
+}
+
+/* ------ 12. 暗色模式下 Callout 适配 ------ */
+.dark .vp-doc .hint-container.note,
+.dark .vp-doc .hint-container.info {
+  background: #252420;
+}
+
+.dark .vp-doc .hint-container.tip {
+  background: #1e2535;
+}
+
+.dark .vp-doc .hint-container.warning {
+  background: #2a2310;
+}
+
+.dark .vp-doc .hint-container.question {
+  background: #162a1e;
+}

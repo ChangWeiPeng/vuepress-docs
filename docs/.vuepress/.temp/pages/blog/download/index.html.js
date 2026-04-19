@@ -1,5 +1,5 @@
 import comp from "C:/Users/29657/vuepress-starter/docs/.vuepress/.temp/pages/blog/download/index.html.vue"
-const data = JSON.parse("{\"path\":\"/blog/download/\",\"title\":\"VocabShoot下载\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"VocabShoot下载\",\"permalink\":\"/blog/download/\",\"createTime\":\"2026/03/28 19:05:30\"},\"readingTime\":{\"minutes\":0.52,\"words\":157},\"git\":{},\"filePathRelative\":\"blog/download.md\",\"headers\":[],\"categoryList\":[{\"id\":\"126ac9\",\"sort\":10000,\"name\":\"blog\"}]}")
+const data = JSON.parse("{\"path\":\"/blog/download/\",\"title\":\"VocabShoot下载\",\"lang\":\"en-US\",\"frontmatter\":{\"title\":\"VocabShoot下载\",\"permalink\":\"/blog/download/\",\"createTime\":\"2026/03/28 19:05:30\"}}")
 export { comp, data }
 
 if (import.meta.webpackHot) {

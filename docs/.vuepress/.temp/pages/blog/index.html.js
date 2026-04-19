@@ -1,5 +1,5 @@
 import comp from "C:/Users/29657/vuepress-starter/docs/.vuepress/.temp/pages/blog/index.html.vue"
-const data = JSON.parse("{\"path\":\"/blog/\",\"title\":\"博客\",\"lang\":\"zh-CN\",\"frontmatter\":{\"lang\":\"zh-CN\",\"title\":\"博客\",\"draft\":true},\"readingTime\":{\"minutes\":0,\"words\":0},\"git\":{},\"filePathRelative\":null,\"headers\":[],\"type\":\"blog\"}")
+const data = JSON.parse("{\"path\":\"/blog//\",\"title\":\"记2026抖音创变者大赛\",\"lang\":\"en-US\",\"frontmatter\":{\"title\":\"记2026抖音创变者大赛\",\"permalink\":\"/blog//\",\"createTime\":\"2026/04/18 22:54:30\",\"tags\":[\"diary\"]}}")
 export { comp, data }
 
 if (import.meta.webpackHot) {

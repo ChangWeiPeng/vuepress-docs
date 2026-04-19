@@ -8,6 +8,8 @@
   },
   "dependencies": {
     "@vuepress/bundler-vite": "2.0.0-rc.23",
+    "@vuepress/plugin-markdown-math": "^2.0.0-rc.108",
+    "@vuepress/plugin-search": "^2.0.0-rc.108",
     "@vuepress/theme-default": "2.0.0-rc.108",
     "pinyin-pro": "^3.28.1",
     "sass-embedded": "^1.89.2",

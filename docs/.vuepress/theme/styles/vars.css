@@ -1,0 +1,46 @@
+/* ============================================
+   Theme Variables - Academic / Tao Style
+   ============================================ */
+
+:root {
+  /* Typography */
+  --font-serif: 'Lora', 'Georgia', 'Palatino Linotype', 'Book Antiqua', serif;
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+
+  /* Colors - warm paper feel */
+  --color-bg: #fdfcf8;
+  --color-bg-soft: #f5f3ee;
+  --color-bg-mute: #eeece6;
+
+  --color-text: #1c1c1c;
+  --color-text-2: #444444;
+  --color-text-3: #777777;
+  --color-text-muted: #999999;
+
+  /* Brand - academic blue */
+  --color-brand: #3a5a8c;
+  --color-brand-hover: #2d4870;
+  --color-brand-light: rgba(58, 90, 140, 0.10);
+
+  /* Borders & dividers */
+  --color-divider: #e0ddd6;
+  --color-border: #d8d5ce;
+
+  /* Link colors (WordPress-style teal-blue) */
+  --color-link: #2a6496;
+  --color-link-hover: #1a4a70;
+
+  /* Layout */
+  --sidebar-width: 230px;
+  --content-max-width: 700px;
+  --navbar-height: 52px;
+
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+}

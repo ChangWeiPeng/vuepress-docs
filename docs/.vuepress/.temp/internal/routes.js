@@ -1,15 +1,11 @@
-export const redirects = JSON.parse("{\"/blog/algorithm.html\":\"/blog/algorithm/\",\"/blog/download.html\":\"/blog/download/\"}")
+export const redirects = JSON.parse("{\"/blog/A%20Look%20Back%20at%20the%202026%20Douyin%20Innovators%20Competition.html\":\"/blog/2026/04/18/A_Look_Back_at_the_2026_Douyin_Innovators_Competition/\",\"/blog/Computing%20Higher-Order%20Moments%20of%20a%201D%20Random%20Walk%20Position.html\":\"/blog/2026/04/18/Computing_Higher-Order_Moments_of_a_1D_Random_Walk_Position/\"}")
 
 export const routes = Object.fromEntries([
-  ["/", { loader: () => import(/* webpackChunkName: "index.html" */"C:/Users/29657/vuepress-starter/docs/.vuepress/.temp/pages/index.html.js"), meta: {"title":""} }],
-  ["/archives/", { loader: () => import(/* webpackChunkName: "archives_index.html" */"C:/Users/29657/vuepress-starter/docs/.vuepress/.temp/pages/archives/index.html.js"), meta: {"title":"Archives"} }],
-  ["/blog/algorithm/", { loader: () => import(/* webpackChunkName: "blog_algorithm_index.html" */"C:/Users/29657/vuepress-starter/docs/.vuepress/.temp/pages/blog/algorithm/index.html.js"), meta: {"title":"VocabShoot 核心算法"} }],
-  ["/blog/download/", { loader: () => import(/* webpackChunkName: "blog_download_index.html" */"C:/Users/29657/vuepress-starter/docs/.vuepress/.temp/pages/blog/download/index.html.js"), meta: {"title":"VocabShoot下载"} }],
-  ["/404.html", { loader: () => import(/* webpackChunkName: "404.html" */"C:/Users/29657/vuepress-starter/docs/.vuepress/.temp/pages/404.html.js"), meta: {"title":""} }],
-  ["/blog/", { loader: () => import(/* webpackChunkName: "blog_index.html" */"C:/Users/29657/vuepress-starter/docs/.vuepress/.temp/pages/blog/index.html.js"), meta: {"title":"博客"} }],
-  ["/blog/tags/", { loader: () => import(/* webpackChunkName: "blog_tags_index.html" */"C:/Users/29657/vuepress-starter/docs/.vuepress/.temp/pages/blog/tags/index.html.js"), meta: {"title":"标签"} }],
-  ["/blog/archives/", { loader: () => import(/* webpackChunkName: "blog_archives_index.html" */"C:/Users/29657/vuepress-starter/docs/.vuepress/.temp/pages/blog/archives/index.html.js"), meta: {"title":"归档"} }],
-  ["/blog/categories/", { loader: () => import(/* webpackChunkName: "blog_categories_index.html" */"C:/Users/29657/vuepress-starter/docs/.vuepress/.temp/pages/blog/categories/index.html.js"), meta: {"title":"分类"} }],
+  ["/", { loader: () => import(/* webpackChunkName: "index.html" */"C:/Users/29657/vuepress-starter/docs/.vuepress/.temp/pages/index.html.js"), meta: {} }],
+  ["/blog/2026/04/18/A_Look_Back_at_the_2026_Douyin_Innovators_Competition/", { loader: () => import(/* webpackChunkName: "blog_2026_04_18_A_Look_Back_at_the_2026_Douyin_Innovators_Competition_index.html" */"C:/Users/29657/vuepress-starter/docs/.vuepress/.temp/pages/blog/2026/04/18/A_Look_Back_at_the_2026_Douyin_Innovators_Competition/index.html.js"), meta: {} }],
+  ["/blog/2026/04/18/Computing_Higher-Order_Moments_of_a_1D_Random_Walk_Position/", { loader: () => import(/* webpackChunkName: "blog_2026_04_18_Computing_Higher-Order_Moments_of_a_1D_Random_Walk_Position_index.html" */"C:/Users/29657/vuepress-starter/docs/.vuepress/.temp/pages/blog/2026/04/18/Computing_Higher-Order_Moments_of_a_1D_Random_Walk_Position/index.html.js"), meta: {} }],
+  ["/archives/", { loader: () => import(/* webpackChunkName: "archives_index.html" */"C:/Users/29657/vuepress-starter/docs/.vuepress/.temp/pages/archives/index.html.js"), meta: {} }],
+  ["/404.html", { loader: () => import(/* webpackChunkName: "404.html" */"C:/Users/29657/vuepress-starter/docs/.vuepress/.temp/pages/404.html.js"), meta: {} }],
 ]);
 
 if (import.meta.webpackHot) {

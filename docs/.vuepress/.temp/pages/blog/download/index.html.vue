@@ -14,7 +14,8 @@
 <li>如果系统下载器无法打开文件，可通过Edge浏览器/MT管理器打开安装</li>
 </ol>
 <h3 id="视频介绍" tabindex="-1"><a class="header-anchor" href="#视频介绍"><span>视频介绍</span></a></h3>
-<VideoBilibili src="https://player.bilibili.com/player.html?bvid=BV1njXSBgEBi&autoplay=0&high_quality=1" width="100%" /></div></template>
+<p>@<a href="BV1njXSBgEBi">bilibili</a></p>
+</div></template>
 
 
 
