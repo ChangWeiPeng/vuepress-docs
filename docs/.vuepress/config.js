@@ -33,7 +33,20 @@ export default defineUserConfig({
   title: 'Physicscw',
   description: 'Updates on my research, notes, and other topics. By Physicscw.',
   base: '/',
-  bundler: viteBundler(),
+  bundler: viteBundler({
+    viteOptions: {
+      ssr: {
+        // Force all VuePress-related packages to be bundled into the SSR bundle
+        // so that virtual modules like @internal/routes are resolved correctly
+        noExternal: [
+          '@vuepress/client',
+          '@vuepress/shared',
+          '@vuepress/helper',
+          'vuepress',
+        ],
+      },
+    },
+  }),
 
   // Google Fonts preconnect
   head: [

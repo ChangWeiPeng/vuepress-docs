@@ -1,6 +1,6 @@
 [build]
   base = "."
-  command = "npm ci && npm run docs:build"
+  command = "npm install --legacy-peer-deps && npm run docs:build"
   publish = "docs/.vuepress/dist"
 [build.environment]
-  NODE_VERSION = "22.18.0"
+  NODE_VERSION = "22.13.0"

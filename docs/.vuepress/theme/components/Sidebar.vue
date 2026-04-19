@@ -3,7 +3,9 @@
 
     <!-- Search -->
     <section class="widget widget-search">
-      <SearchBox />
+      <ClientOnly>
+        <SearchBox />
+      </ClientOnly>
     </section>
 
     <!-- Recent Posts -->

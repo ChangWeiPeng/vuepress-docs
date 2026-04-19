@@ -1,30 +1,26 @@
 {
   "name": "vuepress-starter",
   "version": "1.0.0",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:build": "vuepress build docs",
+    "docs:clean-dev": "vuepress dev docs --clean-cache --clean-temp",
+    "docs:clean-build": "vuepress build docs --clean-cache --clean-temp"
   },
   "dependencies": {
-    "@vuepress/bundler-vite": "2.0.0-rc.28",
-    "@vuepress/plugin-markdown-math": "2.0.0-rc.128",
-    "@vuepress/plugin-search": "2.0.0-rc.128",
+    "@vuepress/bundler-vite": "2.0.0-rc.26",
+    "@vuepress/plugin-markdown-math": "2.0.0-rc.125",
+    "@vuepress/plugin-search": "2.0.0-rc.125",
+    "katex": "^0.16.45",
     "pinyin-pro": "^3.28.1",
     "sass-embedded": "^1.89.2",
     "typescript": "^5.8.3",
-    "vuepress": "2.0.0-rc.28",
-    "vuepress-theme-plume": "1.0.0-rc.196"
+    "vuepress": "2.0.0-rc.26"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
-  "devDependencies": {
-    "@vuepress/bundler-vite": "2.0.0-rc.28",
-    "sass-embedded": "^1.89.2",
-    "typescript": "^5.8.3",
-    "vuepress": "2.0.0-rc.28",
-    "vuepress-theme-plume": "1.0.0-rc.196"
-  }
+  "description": ""
 }
