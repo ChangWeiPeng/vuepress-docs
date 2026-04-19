@@ -40,7 +40,7 @@ $$
 
 特别的，对于$p=q$,$\overline {n_1}=\cfrac 1 4 N$,进而$\overline m=0$.
 
-我们如法炮制求解$\overline {m^2}$:$f(p)=\sum_{n_1=0}^N n_1^2 \cdot C_N^{n_1}p^{n_1}q^{N-n_1}$.如何消去$n_1$的平方项呢？
+我们如法炮制，求解$\overline {m^2}$:$f(p)=\sum_{n_1=0}^N n_1^2 \cdot C_N^{n_1}p^{n_1}q^{N-n_1}$.如何消去$n_1$的平方项呢？
 
 注意到二次求导$(\cfrac {\partial}{\partial p})^2p^{n_1}=n_1^2p^{n_1-2}-n_1p_1^{n_1-2}$,我们可以改写$f(p)$为
 
