@@ -1,0 +1,1 @@
+import{E as e,c as t,d as n,t as r}from"./plugin-vue_export-helper-CVv_1Ww_.js";var i=JSON.parse(`{"path":"/404.html","title":"","lang":"en-US","frontmatter":{"layout":"NotFound"}}`),a={name:`404.html.vue`};function o(r,i,a,o,s,c){return e(),n(`div`,null,[...i[0]||=[t(`p`,null,`404 Not Found`,-1)]])}var s=r(a,[[`render`,o]]);export{i as _pageData,s as default};

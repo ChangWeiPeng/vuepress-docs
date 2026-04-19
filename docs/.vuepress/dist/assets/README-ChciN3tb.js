@@ -1,0 +1,1 @@
+import{E as e,d as t,t as n}from"./plugin-vue_export-helper-CVv_1Ww_.js";var r=JSON.parse(`{"path":"/","title":"Home","lang":"en-US","frontmatter":{"title":"Home","layout":"Layout"}}`),i={name:`README.md`};function a(n,r,i,a,o,s){return e(),t(`div`)}var o=n(i,[[`render`,a]]);export{r as _pageData,o as default};

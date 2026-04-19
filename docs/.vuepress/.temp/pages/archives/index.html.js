@@ -1,16 +1,3 @@
 import comp from "C:/Users/29657/vuepress-starter/docs/.vuepress/.temp/pages/archives/index.html.vue"
 const data = JSON.parse("{\"path\":\"/archives/\",\"title\":\"Archives\",\"lang\":\"en-US\",\"frontmatter\":{}}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}
