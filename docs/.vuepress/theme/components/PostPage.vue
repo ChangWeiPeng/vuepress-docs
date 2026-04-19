@@ -82,14 +82,14 @@ function formatDate(raw) {
   border-bottom: 1px solid var(--color-divider);
 }
 
-.post-title {
-  font-family: var(--font-serif);
-  font-size: 1.9rem;
-  font-weight: 600;
-  color: var(--color-brand);
-  margin: 0 0 0.4rem;
-  line-height: 1.25;
-}
+  .post-title {
+    font-family: var(--font-serif);
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: var(--color-brand);
+    margin: 0 0 0.4rem;
+    line-height: 1.25;
+  }
 
 .post-meta {
   font-family: var(--font-sans);

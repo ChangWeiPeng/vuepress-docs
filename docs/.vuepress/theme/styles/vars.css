@@ -19,8 +19,8 @@
   --color-text-muted: #999999;
 
   /* Brand - academic blue */
-  --color-brand: #3a5a8c;
-  --color-brand-hover: #2d4870;
+  --color-brand: #000000;
+  --color-brand-hover: #000000;
   --color-brand-light: rgba(58, 90, 140, 0.10);
 
   /* Borders & dividers */
@@ -28,8 +28,8 @@
   --color-border: #d8d5ce;
 
   /* Link colors (WordPress-style teal-blue) */
-  --color-link: #2a6496;
-  --color-link-hover: #1a4a70;
+  --color-link: #5da4e6;
+  --color-link-hover: #000000;
 
   /* Layout */
   --sidebar-width: 230px;
