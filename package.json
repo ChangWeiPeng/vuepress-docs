@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "docs:dev": "vuepress dev docs",
-    "docs:build": "npx vuepress build docs"
+    "docs:build": "vuepress build docs"
   },
   "dependencies": {
     "@vuepress/bundler-vite": "2.0.0-rc.23",
