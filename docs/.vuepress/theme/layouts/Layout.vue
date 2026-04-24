@@ -15,6 +15,9 @@
           <!-- Home: post feed -->
           <PostFeed v-if="isHome" />
 
+          <!-- Search results page -->
+          <SearchResults v-else-if="isSearch" />
+
           <!-- Blog post page -->
           <PostPage v-else-if="isBlogPost" />
 
@@ -47,12 +50,14 @@ import Sidebar from '../components/Sidebar.vue'
 import PostFeed from '../components/PostFeed.vue'
 import PostPage from '../components/PostPage.vue'
 import DocPage from '../components/DocPage.vue'
+import SearchResults from '../components/SearchResults.vue'
 
 const page = usePageData()
 const siteData = useSiteData()
 const route = useRoute()
 
 const isHome = computed(() => route.path === '/')
+const isSearch = computed(() => route.path.startsWith('/search'))
 const isBlogPost = computed(() =>
   route.path.startsWith('/blog/') && route.path !== '/blog/'
 )

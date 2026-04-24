@@ -1,7 +1,6 @@
 import { defineUserConfig } from 'vuepress'
 import { viteBundler } from '@vuepress/bundler-vite'
 import { getDirname, path } from 'vuepress/utils'
-import { searchPlugin } from '@vuepress/plugin-search'
 import { markdownMathPlugin } from '@vuepress/plugin-markdown-math'
 import { blogIndexPlugin } from './theme/plugin-blog-index.js'
 
@@ -59,17 +58,6 @@ export default defineUserConfig({
   plugins: [
     blogIndexPlugin(),
     markdownFixPlugin(),
-    searchPlugin({
-      maxSuggestions: 10,
-      getExtraFields: (page) => {
-        const tags = page.frontmatter.tags ?? []
-        const categories = page.frontmatter.categories ?? []
-        return [
-          ...(Array.isArray(tags) ? tags : [tags]),
-          ...(Array.isArray(categories) ? categories : [categories]),
-        ]
-      },
-    }),
     markdownMathPlugin({ type: 'katex' }),
   ],
 
