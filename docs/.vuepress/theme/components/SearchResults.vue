@@ -27,10 +27,10 @@
           </div>
         </header>
 
-        <!-- Pre-rendered excerpt HTML (from <!-- more --> marker, built at compile time) -->
-        <div v-if="post.excerptHtml" class="post-excerpt post-content" v-html="post.excerptHtml"></div>
-        <div v-else class="post-excerpt post-content">{{ post.excerpt }}</div>
-        <span class="post-ellipsis">[…]</span>
+        <!-- Full post content with math rendered -->
+        <div class="post-content">
+          <Content :path="post.routePath" />
+        </div>
 
         <footer class="post-footer">
           <a :href="post.path" class="read-more">Read more →</a>
@@ -43,6 +43,7 @@
 
 <script setup>
 import { ref, computed, onMounted } from 'vue'
+import { Content } from 'vuepress/client'
 import { blogPosts } from '@temp/blog-index.js'
 
 const query = ref('')
@@ -87,26 +88,6 @@ function formatDate(raw) {
   const d = new Date(String(raw).replace(/\//g, '-'))
   if (isNaN(d.getTime())) return String(raw)
   return d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
-}
-
-// Clip content AFTER results render — watch fires after computed updates + DOM re-renders
-watch(results, async () => {
-  await nextTick()
-  setTimeout(clipPostContent, 80)
-}, { flush: 'post' })
-
-function clipPostContent() {
-  const clips = document.querySelectorAll('.post-clip')
-  clips.forEach(clip => {
-    let children = Array.from(clip.children)
-    // VuePress 2 Content renders a wrapper div — go one level deeper
-    if (children.length === 1 && children[0].tagName === 'DIV') {
-      children = Array.from(children[0].children)
-    }
-    children.forEach((el, i) => {
-      if (i >= 3) el.style.display = 'none'
-    })
-  })
 }
 </script>
 
@@ -154,19 +135,6 @@ function clipPostContent() {
 
 .cat-name {
   color: var(--color-link);
-}
-
-/* Clipped content area — clipping handled by global.css */
-.post-clip {
-  overflow: hidden;
-}
-
-.post-ellipsis {
-  display: block;
-  font-family: var(--font-serif);
-  font-size: 1rem;
-  color: var(--color-text-3);
-  margin: 0.2rem 0 0;
 }
 
 .post-footer {

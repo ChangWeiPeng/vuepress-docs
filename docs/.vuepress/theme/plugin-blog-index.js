@@ -81,13 +81,6 @@ export const blogIndexPlugin = () => ({
         }
       }
 
-      // Extract pre-rendered HTML excerpt (everything before <!-- more -->)
-      const rendered = page.contentRendered || ''
-      const moreIdx = rendered.indexOf('<!--more-->')
-      const excerptHtml = moreIdx !== -1
-        ? rendered.slice(0, moreIdx).trim()
-        : ''
-
       posts.push({
         routePath: page.path,
         path: permalink,
@@ -96,7 +89,6 @@ export const blogIndexPlugin = () => ({
         categories: normArr(fm.categories),
         tags: normArr(fm.tags),
         excerpt: extractExcerpt(page.content || '', 300),
-        excerptHtml,
       })
     }
 
