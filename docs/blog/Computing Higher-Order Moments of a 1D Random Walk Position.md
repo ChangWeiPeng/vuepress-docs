@@ -10,6 +10,8 @@ createTime: 2026/04/18 23:41:51
 
 但是，这不是一个很informative的形式.我们是否能化简？
 
+<!-- more -->
+
 往左走和往右走是对称的。因此：$\overline m=\overline {n_1}-\overline {n_2}$，考虑其中一个，$\overline {n_1}=\sum_{n_1=0}^N n_1 \cdot C_N^{n_1}p^{n_1}q^{N-n_1}$.你可能会注意到，$p=q=\cfrac 1 2$，带入得到
 
 $$

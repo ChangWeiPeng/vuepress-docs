@@ -27,10 +27,9 @@
           </div>
         </header>
 
-        <!-- Clipped content: renders math just like homepage, truncated with [...] -->
-        <div class="post-clip">
-          <Content :path="post.routePath" />
-        </div>
+        <!-- Pre-rendered excerpt HTML (from <!-- more --> marker, built at compile time) -->
+        <div v-if="post.excerptHtml" class="post-excerpt post-content" v-html="post.excerptHtml"></div>
+        <div v-else class="post-excerpt post-content">{{ post.excerpt }}</div>
         <span class="post-ellipsis">[…]</span>
 
         <footer class="post-footer">
@@ -43,8 +42,7 @@
 </template>
 
 <script setup>
-import { ref, computed, watch, onMounted, nextTick } from 'vue'
-import { Content } from 'vuepress/client'
+import { ref, computed, onMounted } from 'vue'
 import { blogPosts } from '@temp/blog-index.js'
 
 const query = ref('')
